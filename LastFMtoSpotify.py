@@ -1,3 +1,5 @@
+#!/usr/bin/python3.4
+
 import requests
 import xml.etree.ElementTree as ET
 import json
@@ -59,7 +61,7 @@ def spotifySearchAndGo(tracks):
 			print(artist + " - " + name + " wasn't found by spotify.")
 
 	finalString = "spotify:trackset:Playlist:" + ",".join(spotifyIDList)
-	print(finalString)
+	#print(finalString)
 	os.system("xdg-open " + finalString)
 
 def parserOptions():
